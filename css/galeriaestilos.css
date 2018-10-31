@@ -1,0 +1,84 @@
+--- CSS --- 
+
+@charset "UTF-8";
+/* CSS Document */
+* {
+  margin:0; padding: 0;
+}
+
+#contenedor{
+  width: 100%; max-width:1024px;
+  margin: 100px auto;
+  font-family: Century Gotic;
+}
+
+#listado{
+  display: block;
+  width: 400px;
+  height: 50px;
+  margin: 10px auto;
+}
+#listado li {
+  text-align:center;
+  display:block;
+  list-style:none;
+  cursor:pointer;
+  width:90px;
+  height:50px;
+  margin: 0px 5px;
+  line-height:50px;
+  float:left;
+}
+#listado li:hover{
+  background-color: rgba(204, 204, 204, 1.00);
+}
+#listado li.active{
+   background-color: rgba(0,0,0,1.00);
+   color:white;
+}
+
+#portafolio{
+  width: 100%; max-width: 1024px;
+  height: auto;
+  text-align: center;
+}
+
+.item{
+  display: none;
+  opacity: 0;
+  width: 20%;
+  margin: 5px;
+}
+.item img{
+  width: 100%;
+}
+
+/*PC*/
+@media screen and (min-width: 960px) {
+ #contenedor {
+  width: 100%;
+  margin: auto;
+ }
+}
+
+/*Tablet*/
+@media screen and (min-width: 480px) and (max-width: 960px) {
+ #contenedor {
+  width: 100%;
+  margin: auto;
+ }
+ .item {
+  width: 25%;
+ }
+}
+
+/*móviles*/
+@media screen and (min-width: 200px) and (max-width: 480px) {
+ #contenedor {
+  width: 90%;
+  margin: auto;
+ }
+ .item {
+  width: 90%;
+ }
+ }?
